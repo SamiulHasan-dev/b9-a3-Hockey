@@ -23,6 +23,8 @@
                     colors: {
                         clifford: '#da373d',
                         'primary-color': '#FF4240',
+                        'paragraph-color': '#13131899',
+                        'heading-color': '#131318',
                     }
                 }
             }
@@ -77,7 +79,7 @@
         <!-- Banner Section Start -->
         <section class="max-w-5xl mx-auto my-10">
             <div class="relative mx-2 lg:mx-0">
-                <div class="carousel w-full">
+                <div class="carousel w-full mb-5 lg:mb-0">
                     <!-- slide1 image -->
                     <div id="slide1" class="carousel-item relative w-full">
                       <img src="Images/1.png" class="w-full object-cover" />
@@ -105,13 +107,39 @@
         <!-- Banner Section End -->
 
         <!-- Hockey Club Section Start -->
-        <section  class="max-w-5xl mx-auto my-10">
-            <div>
-                <h1>Professional Hockeys Club</h1>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <section  class="max-w-5xl mx-auto my-20">
+            <div class="py-6 text-center border-y-2 border-dotted space-y-3">
+                <h1 class="text-3xl font-extrabold text-heading-color">Professional Hockeys Club</h1>
+                <p class="text-base font-medium text-paragraph-color px-3 lg:px-0 lg:w-3/5 mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
-
+            <div class="flex flex-col lg:flex-row mt-12 gap-8">
+                <!-- Facility 1 -->
+                <div class="flex flex-col justify-center items-center space-y-2">
+                    <div class="radial-progress text-error" style="--value:70;" role="progressbar">87%</div>
+                    <h5 class="text-heading-color font-bold">Prayer Facility</h5>
+                    <p class="text-paragraph-color text-xs text-center w-3/4 lg:w-4/5">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <!-- Facility 2 -->
+                <div class="flex flex-col justify-center items-center space-y-2">
+                    <div class="radial-progress text-success" style="--value:70;" role="progressbar">95%</div>
+                    <h5 class="text-heading-color font-bold">Experienced Coach</h5>
+                    <p class="text-paragraph-color text-xs text-center w-3/4 lg:w-4/5">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <!-- Facility 3 -->
+                <div class="flex flex-col justify-center items-center space-y-2">
+                    <div class="radial-progress text-warning" style="--value:70;" role="progressbar">90%</div>
+                    <h5 class="text-heading-color font-bold">Senior Player</h5>
+                    <p  class="text-paragraph-color text-xs text-center w-3/4 lg:w-4/5">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <!-- Facility 4 -->
+                <div class="flex flex-col justify-center items-center space-y-2">
+                    <div class="radial-progress text-primary" style="--value:70;" role="progressbar">80%</div>
+                    <h5 class="text-heading-color font-bold">Training Ground</h5>
+                    <p  class="text-paragraph-color text-xs text-center w-3/4 lg:w-4/5">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
         </section>
+        <!-- Hockey Club Section End -->
     </main>
     <footer>
 
