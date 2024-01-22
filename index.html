@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e5e2e648f6.js" crossorigin="anonymous"></script>
     <!-- Daisy Custom -->
     <script>
         tailwind.config = {
@@ -20,6 +22,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'primary-color': '#FF4240',
                     }
                 }
             }
@@ -33,9 +36,40 @@
     </style>
 </head>
 
-<body>
-    <header>
-        
+<body class="font-family">
+    <header class="max-w-5xl mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a class="text-primary-color text-base">Home</a></li>
+                  <li><a class="text-base text-[#424247]">About</a></li>
+                  <li><a class="text-base text-[#424247]">Pages</a></li>
+                  <li><a class="text-base text-[#424247]">Blog</a></li>
+                  <li><a class="text-base text-[#424247]">Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-3xl font-extrabold">Hockey<span class="text-primary-color">'</span> s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-primary-color text-base font-semibold">Home</a></li>
+                  <li><a class="text-base text-[#424247]">About</a></li>
+                  <li><a class="text-base text-[#424247]">Pages</a></li>
+                  <li><a class="text-base text-[#424247]">Blog</a></li>
+                  <li><a class="text-base text-[#424247]">Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="flex gap-4 items-center">
+                <i class="hidden lg:block text-xl text-[#89898B] fa-solid fa-magnifying-glass"></i>
+                <a class="btn bg-primary-color text-white font-medium text-xl">Get Ticket</a>
+              </div>
+            </div>
+          </div>
     </header>
     <main>
 
